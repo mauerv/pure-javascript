@@ -11,6 +11,13 @@ const addElement = function () {
   list.appendChild(li);
 };
 
+const removeFirst = function () {
+  const list = document.getElementById("list");
+  if (list.childNodes.length > 0) {
+    list.removeChild(list.firstElementChild);
+  }
+};
+
 const removeLast = function () {
   const list = document.getElementById("list");
   if (list.childNodes.length > 0) {
